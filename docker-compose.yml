@@ -1,0 +1,15 @@
+version: "3"
+
+# Serviços ou aplicações no docker
+services:
+  app:
+    # Localização do Dockerfile (Diretório atual)
+    build: .
+    # Comando executado quando o container subir
+    command: npm start
+    ports:
+      - "3000:3000"
+    # Onde estão os arquivos dentro do container
+    volumes:
+      # Este é o mesmo caminho de WORKDIR no Dockerfile
+      - .:/usr/app
