@@ -2,6 +2,7 @@ version: "3"
 
 # Serviços ou aplicações no docker
 services:
+  # app deve ser o nome do container
   app:
     # Localização do Dockerfile (Diretório atual)
     build: .
